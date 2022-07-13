@@ -1,10 +1,10 @@
-location="eastus2"
-RG="RSG-KZO-Perforce"
-subscription_id="d1d53b59-b625-4bf9-9c7e-0ade10b76d6b"
-Environment = "DEV"
+location="eastus"
+RG="RSG-CCI-Automation"
+subscription_id="5487a063-1d3b-4ad3-8583-01948e8fa375"
+Environment = "POC"
 Cost_Center = 1392
 IDName="anomalicci"
-StorageAccountid="https://medicalaccutestorage.blob.core.windows.net"
+StorageAccountid="https://anomaliccistrgaact.blob.core.windows.net"
 tags_map={
         Environment = "Test"
         Cost_Center = "1392"
@@ -12,19 +12,19 @@ tags_map={
 
 
 nwprefix={
-       nwrg = "USEast2-VDC-Spokes"
-       name = "USEast2-VDC-Spoke-10.197.8.0-23"
-       address = "10.197.8.0/23"
+       nwrg = "USEast-DevTest-Networking"
+       name = "USEast-VDC-DevTest-Spoke-10.197.115.0-24"
+       address = "10.197.115.0/24"
 }
 
 nsgprefix={
-      name = "USEast2-VDC-Default-NSG"
-      nsgrg = "Stryker-VDC-USA-1-NSG-RG"
+      name = "Default-NSG-Well-Known-Ports"
+      nsgrg = "USEast-DevTest-Networking"
             
 }
 subnet={
-        app = "Subnet1"
-        address = "10.197.8.0/24"
+        app = "Workloads"
+        address = "10.197.115.0/24"
 }
 username = "sykrheladmin"
 rsa_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSFGRvJ6F4kZy5pH1trryUNyOuAngCSXVnkIxnerVcbbamqVEKuYzXvIENhT8EPd4SrSu74XF2uxgXIwsv+howxeTrVkfTxqqMxu/RXzph7WCWpgOunE/N+teuOV9xq/fh0oopyh46rSeyZvvcArzfaRUdcmkDuDaQpt+mZ3s6mWp87Whm8mb3SrYk4wlB+FAGzlg8MSW21lymX8zGZrZ2CoDjOUums33bllyoVxqPBUL8kQOcthELU4giPNsbCFp20OyB6yc5ribb/H71LxpRHwKhP5epED9Ah6hFrcdVVXQKaenhdnszn7U1IzunlFkoUCPY/yWaT/cc12zR/Hyx sykrheladmin@bldlxadm02"
