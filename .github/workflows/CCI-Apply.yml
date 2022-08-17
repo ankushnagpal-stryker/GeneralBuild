@@ -1,4 +1,4 @@
-name: 'CCI-Apply'
+name: 'CCI-Destroy'
 on:
   workflow_dispatch:
     branches:
