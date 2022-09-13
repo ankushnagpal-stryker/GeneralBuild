@@ -31,7 +31,7 @@ vms = {
     
     "azusftwst01" = {
     size = "Standard_E4as_v5"
-    source_image_id = "/subscriptions/6352ed84-44f5-46cc-a0cb-ac8fd59b0f43/resourceGroups/RSG-Performance-Tools/providers/Microsoft.Compute/galleries/RHEL8.4Image/images/RHEL8.4.2/versions/8.4.2"
+    source_image_id = "/subscriptions/5487a063-1d3b-4ad3-8583-01948e8fa375/resourceGroups/rsg-Demantra/providers/Microsoft.Compute/galleries/OEL/images/OEL7.9/versions/7.9.0"
       disks = {
          
         "datadisk_0" = {
@@ -82,7 +82,7 @@ vms = {
 
     "azusftwsr01" = {
     size = "Standard_E4as_v5"
-    source_image_id = "/subscriptions/6352ed84-44f5-46cc-a0cb-ac8fd59b0f43/resourceGroups/RSG-Performance-Tools/providers/Microsoft.Compute/galleries/RHEL8.4Image/images/RHEL8.4.2/versions/8.4.2"
+    source_image_id = "/subscriptions/5487a063-1d3b-4ad3-8583-01948e8fa375/resourceGroups/rsg-Demantra/providers/Microsoft.Compute/galleries/OEL/images/OEL7.9/versions/7.9.0"
       disks = {
          
         "datadisk_0" = {
