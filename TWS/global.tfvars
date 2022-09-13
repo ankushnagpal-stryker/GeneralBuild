@@ -19,9 +19,8 @@ nwprefix={
 
 #nsgprefix={
 #      name = "NSG-USEast2-BigDataPOC-Spoke-10.197.11.0-25"
-#      nsgrg = "USEast2-BigDataPOC-Networking"
-            
-}
+#      nsgrg = "USEast2-BigDataPOC-Networking"        
+#}
 subnet={
         app = "Workloads"
         address = "10.197.10.0/24"
