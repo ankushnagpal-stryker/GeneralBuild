@@ -34,43 +34,43 @@ vms = {
     source_image_id = "/subscriptions/6352ed84-44f5-46cc-a0cb-ac8fd59b0f43/resourceGroups/RSG-Performance-Tools/providers/Microsoft.Compute/galleries/RHEL8.4Image/images/RHEL8.4.2/versions/8.4.2"
       disks = {
          
-        "data_0" = {
+        "datadisk_0" = {
           size                 = 2048
           storage_account_type = "Premium_LRS"
           lun                  = 0
         }    
         
-        "data_1" = {
+        "datadisk_1" = {
           size                 = 2048
           storage_account_type = "Premium_LRS"
           lun                  = 1
         } 
 
-        "redoa" = {
+        "redoadisk_0" = {
           size                 = 32
           storage_account_type = "Premium_LRS"
           lun                  = 2
         }  
 
-          "redob" = {
+          "redobdisk_0" = {
           size                 = 32
           storage_account_type = "Premium_LRS"
           lun                  = 3
         } 
 
-        "dbdisk" = {
+        "dbdisk_0" = {
           size                 = 64
           storage_account_type = "Premium_LRS"
           lun                  = 4
         } 
 
-        "arch" = {
+        "archdisk_0" = {
           size                 = 128
           storage_account_type = "Premium_LRS"
           lun                  = 5
         } 
 
-        "temp" = {
+        "tempdisk_0" = {
           size                 = 128
           storage_account_type = "Premium_LRS"
           lun                  = 6
@@ -85,43 +85,43 @@ vms = {
     source_image_id = "/subscriptions/6352ed84-44f5-46cc-a0cb-ac8fd59b0f43/resourceGroups/RSG-Performance-Tools/providers/Microsoft.Compute/galleries/RHEL8.4Image/images/RHEL8.4.2/versions/8.4.2"
       disks = {
          
-        "data_0" = {
+        "datadisk_0" = {
           size                 = 1024
           storage_account_type = "Premium_LRS"
           lun                  = 0
         }    
         
-        "data_1" = {
+        "datadisk_1" = {
           size                 = 1024
           storage_account_type = "Premium_LRS"
           lun                  = 1
         } 
 
-        "redoa" = {
+        "redoadisk_0" = {
           size                 = 32
           storage_account_type = "Premium_LRS"
           lun                  = 2
         }  
 
-          "redob" = {
+          "redobdisk_0" = {
           size                 = 32
           storage_account_type = "Premium_LRS"
           lun                  = 3
         } 
 
-        "dbdisk" = {
+        "dbdisk_0" = {
           size                 = 64
           storage_account_type = "Premium_LRS"
           lun                  = 4
         } 
 
-        "arch" = {
+        "archdisk_0" = {
           size                 = 128
           storage_account_type = "Premium_LRS"
           lun                  = 5
         } 
 
-        "temp" = {
+        "tempdisk_0" = {
           size                 = 128
           storage_account_type = "Premium_LRS"
           lun                  = 6
