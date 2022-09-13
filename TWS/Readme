@@ -1,0 +1,18 @@
+The Oracle databases for Trackwise application are currently at version 12. As part of Trackwise application upgrade, the databases are being upgraded to version 19c and are being moved to Azure cloud (East). 
+
+Two servers are required
+
+1. Sandbox Transactional database (SFTWS). 
+2. Trackwise's Sandbox Reporting database (SFTWSR)
+
+Trackwise Sandbox VM's:
+Sandbox (SFTWS)
+RITM2370730 / REQ2348627 / SCTASK2613903
+
+Sandbox Reporting (SFTWSR)
+RITM2370742 / REQ2348639 / SCTASK2613904
+
+
+Subscription: Stryker-Dev/Test
+Resource Group: RSG-Trackwise-SBX 
+Azure Region: US east 2
