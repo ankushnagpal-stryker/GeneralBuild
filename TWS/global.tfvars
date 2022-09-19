@@ -29,9 +29,9 @@ username = "sykrheladmin"
 rsa_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSFGRvJ6F4kZy5pH1trryUNyOuAngCSXVnkIxnerVcbbamqVEKuYzXvIENhT8EPd4SrSu74XF2uxgXIwsv+howxeTrVkfTxqqMxu/RXzph7WCWpgOunE/N+teuOV9xq/fh0oopyh46rSeyZvvcArzfaRUdcmkDuDaQpt+mZ3s6mWp87Whm8mb3SrYk4wlB+FAGzlg8MSW21lymX8zGZrZ2CoDjOUums33bllyoVxqPBUL8kQOcthELU4giPNsbCFp20OyB6yc5ribb/H71LxpRHwKhP5epED9Ah6hFrcdVVXQKaenhdnszn7U1IzunlFkoUCPY/yWaT/cc12zR/Hyx sykrheladmin@bldlxadm02"
 vms = {
     
-    "azusftwst01" = {
+    "azuorasftwst01" = {
     size = "Standard_E4as_v5"
-    source_image_id = "/subscriptions/5487a063-1d3b-4ad3-8583-01948e8fa375/resourceGroups/rsg-Demantra/providers/Microsoft.Compute/galleries/OEL/images/OEL7.9/versions/7.9.0"
+    source_image_id = "/subscriptions/d1d53b59-b625-4bf9-9c7e-0ade10b76d6b/resourceGroups/RG-UNIX-VDC/providers/Microsoft.Compute/galleries/OEL8/images/OEL8.4/versions/8.4.0"
       disks = {
          
         "datadisk_0" = {
@@ -80,9 +80,9 @@ vms = {
       
     }      
 
-    "azusftwsr01" = {
+    "azuorasftwsr01" = {
     size = "Standard_E4as_v5"
-    source_image_id = "/subscriptions/5487a063-1d3b-4ad3-8583-01948e8fa375/resourceGroups/rsg-Demantra/providers/Microsoft.Compute/galleries/OEL/images/OEL7.9/versions/7.9.0"
+    source_image_id = "/subscriptions/d1d53b59-b625-4bf9-9c7e-0ade10b76d6b/resourceGroups/RG-UNIX-VDC/providers/Microsoft.Compute/galleries/OEL8/images/OEL8.4/versions/8.4.0"
       disks = {
          
         "datadisk_0" = {
