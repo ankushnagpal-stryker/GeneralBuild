@@ -4,7 +4,7 @@ terraform {
     resource_group_name  = "RG-UNIX-VDC"
     storage_account_name = "unixstatefiles"
     container_name       = "devtfstatefiles"
-    key                  = "gdapoc01.tfstate"
+    key                  = "polymerase.tfstate"
      }
 }
  
