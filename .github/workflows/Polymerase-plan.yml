@@ -1,4 +1,4 @@
-name: 'CCI-Plan'
+name: 'Polymerase-plan'
 on:
   workflow_dispatch:
     branches:
