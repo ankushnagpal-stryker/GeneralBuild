@@ -19,7 +19,7 @@ nwprefix={
 
 nsgprefix={
       name = "Default-NSG-Well-Known-Ports"
-      nsgrg = "Stryker-HC-VDC-PRD"
+      nsgrg = "USEast2-HC-VDC-PRD-Networking"
             
 }
 subnet={
