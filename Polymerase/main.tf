@@ -39,13 +39,13 @@ resource "azurerm_linux_virtual_machine" "VM" {
   boot_diagnostics {
         storage_account_uri = var.StorageAccountid
     }
-/*
+
   plan {
 	name = "rhel-lvm84"
 	publisher = "redhat"
 	product = "rhel-byos"
   }
-*/
+
   tags = {
         Environment = "${var.tags_map.Environment}"
         "Cost Center" = "${var.tags_map.Cost_Center}"
