@@ -24,7 +24,7 @@ provider "azurerm" {
 resource "azurerm_linux_virtual_machine" "VM" {
   for_each              = var.vms
   name                  = each.key
-  [location              = var.location
+  location              = var.location
   resource_group_name   = data.azurerm_resource_group.RG.name
   network_interface_ids = [azurerm_network_interface.NW[each.key].id]
   size                  = each.value.size
