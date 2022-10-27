@@ -24,7 +24,7 @@ provider "azurerm" {
 resource "azurerm_linux_virtual_machine" "VM" {
   for_each              = var.vms
   name                  = each.key
-  location              = var.location
+  [location              = var.location
   resource_group_name   = data.azurerm_resource_group.RG.name
   network_interface_ids = [azurerm_network_interface.NW[each.key].id]
   size                  = each.value.size
@@ -41,7 +41,7 @@ resource "azurerm_linux_virtual_machine" "VM" {
     }
 
   plan {
-	name = "rhel-lvm84"
+	name = "rhel-lvm85"
 	publisher = "redhat"
 	product = "rhel-byos"
   }
@@ -115,6 +115,7 @@ data "azurerm_subnet" "subnet_app" {
 }
 
 ###Define NSG#########
+/*
 data "azurerm_network_security_group" "nsg" {
   name                = "${var.nsgprefix.name}"
   resource_group_name = "${var.nsgprefix.nsgrg}"
@@ -125,3 +126,4 @@ resource "azurerm_network_interface_security_group_association" "nic-nsg" {
   network_interface_id      = azurerm_network_interface.NW[each.key].id
   network_security_group_id = data.azurerm_network_security_group.nsg.id
 }
+*/
