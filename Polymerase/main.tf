@@ -41,7 +41,7 @@ resource "azurerm_linux_virtual_machine" "VM" {
     }
 
   plan {
-	name = "rhel-lvm85-gen2"
+	name = "rhel-lvm85"
 	publisher = "redhat"
 	product = "rhel-byos"
   }
