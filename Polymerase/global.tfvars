@@ -34,7 +34,7 @@ vms = {
     
     "azusqugdrq01" = {
     size = "Standard_D4s_v4"
-    source_image_id = "/subscriptions/d1d53b59-b625-4bf9-9c7e-0ade10b76d6b/resourceGroups/RG-UNIX-VDC/providers/Microsoft.Compute/galleries/RHEL/images/RHEL8.5/versions/8.5.0"
+    source_image_id = "/subscriptions/d1d53b59-b625-4bf9-9c7e-0ade10b76d6b/resourceGroups/RG-UNIX-VDC/providers/Microsoft.Compute/galleries/RHEL/images/RHEL8.5"
       disks = {
         "app_0" = {
           size                 = 256
