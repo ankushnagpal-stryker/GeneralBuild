@@ -19,9 +19,7 @@ variable "subnet" {
 
 }
 
-variable "IDName" {
-  type    = string
-}
+
 
 variable "subscription_id" {
   type        = string
