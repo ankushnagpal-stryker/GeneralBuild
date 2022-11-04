@@ -36,14 +36,9 @@ vms = {
     source_image_id = "/subscriptions/d1d53b59-b625-4bf9-9c7e-0ade10b76d6b/resourceGroups/RG-UNIX-VDC/providers/Microsoft.Compute/galleries/RHEL/images/RHEL8.5"
       disks = {
         "app_0" = {
-          size                 = 256
+          size                 = 512
           storage_account_type = "Premium_LRS"
           lun                  = 0
-        }
-        "app_1" = {
-          size                 = 256
-          storage_account_type = "Premium_LRS"
-          lun                  = 1
         }
       }
       
