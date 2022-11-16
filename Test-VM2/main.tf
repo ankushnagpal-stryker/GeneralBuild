@@ -27,8 +27,8 @@ provider "azurerm" {
 resource "azurerm_linux_virtual_machine" "VM" {
   for_each              = var.vms
   name                  = each.key
-  proximity_placement_group_id = var.ppgid1
-  availability_set_id = var.asid1
+  proximity_placement_group_id = var.ppgid2
+  availability_set_id = var.asid2
   location              = var.location
   resource_group_name   = data.azurerm_resource_group.RG.name
   network_interface_ids = [azurerm_network_interface.NW[each.key].id]
