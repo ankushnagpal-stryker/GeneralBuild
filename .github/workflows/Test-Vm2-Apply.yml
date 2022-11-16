@@ -1,4 +1,4 @@
-name: 'Test-Vm2-Plan'
+name: 'Test-Vm2-Apply'
 on:
   workflow_dispatch:
     branches:
