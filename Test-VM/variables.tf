@@ -16,6 +16,13 @@ variable "subnet" {
    type = map(string)
 
 }
+variable "ppgid1" {
+  type     = string
+}
+
+variable "asid1" {
+  type     = string
+}
 
 variable "IDName" {
   type    = string
