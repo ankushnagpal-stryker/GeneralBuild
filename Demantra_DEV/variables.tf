@@ -5,15 +5,15 @@ variable "location" {
 variable "RG" {
   type     = string
 }
-/*
+
 variable "nwprefix" {
   type    = map(string)
 }
-*/
+/*
 variable "nsgprefix" {
   type    = map(string)
 }
-
+*/
 variable "subnet" {
    type = map(string)
 
