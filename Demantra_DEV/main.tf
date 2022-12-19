@@ -114,15 +114,17 @@ data "azurerm_subnet" "subnet_app" {
   resource_group_name  = "${data.azurerm_resource_group.nwrg.name}"
 }
 
-###Define NSG#########
+/*###Define NSG#########
 
 data "azurerm_network_security_group" "nsg" {
   name                = "${var.nsgprefix.name}"
   resource_group_name = "${var.nsgprefix.nsgrg}"
 }
 
+
 resource "azurerm_network_interface_security_group_association" "nic-nsg" {
   for_each                  = var.vms
   network_interface_id      = azurerm_network_interface.NW[each.key].id
   network_security_group_id = data.azurerm_network_security_group.nsg.id
 }
+*/
