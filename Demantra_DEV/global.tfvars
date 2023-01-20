@@ -50,7 +50,7 @@ vms = {
           storage_account_type = "Premium_LRS"
           lun                  = 2
         }
-        "redoadisk_1" = {
+        "redobdisk_0" = {
           size                 = 64
           storage_account_type = "Premium_LRS"
           lun                  = 3
