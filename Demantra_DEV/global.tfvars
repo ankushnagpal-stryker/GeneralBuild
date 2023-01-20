@@ -23,7 +23,7 @@ subnet={
 
 nsgprefix={
       name = "Default-NSG-Well-Known-Ports"
-      nsgrg = "USCentral-HC-VDC-PRD-Networking"
+      nsgrg = "USCentral-Dev-Test-Networking"
             
 }
 
