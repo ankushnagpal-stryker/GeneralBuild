@@ -45,6 +45,12 @@ resource "azurerm_linux_virtual_machine" "VM" {
         "Cost Center" = "${var.tags_map.Cost_Center}"
 	}
 
+ plan {
+	name = "rhel-lvm85"
+	publisher = "redhat"
+	product = "rhel-byos"
+  }
+
   admin_ssh_key {
     username   = var.username
     public_key = var.rsa_key
