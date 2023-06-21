@@ -12,13 +12,13 @@ tags_map={
 
 nwprefix={
        nwrg = "USEast2-HC-VDC-PRD-Networking"
-       name = "USEast2-HC-VDC-Spoke-10.195.36.0-23"
-       address = "10.195.36.0/23"
+       name = "USEast2-HC-VDC-Spoke-10.197.60.0-23"
+       address = "10.197.60.0/23"
 }
 
 subnet={
         app = "Workloads"
-        address = "10.195.36.0/24"
+        address = "10.197.60.0/24"
 }
 
 nsgprefix={
