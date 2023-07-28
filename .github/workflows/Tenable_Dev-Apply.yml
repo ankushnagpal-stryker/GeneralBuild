@@ -1,4 +1,4 @@
-name: 'Tenable_Dev-Destroy'
+name: 'Tenable_Dev-Apply'
 on:
   workflow_dispatch:
     branches:
@@ -34,10 +34,10 @@ jobs:
           tf_actions_subcommand: 'init'
           tf_actions_working_dir: "./Tenable_Dev/"
          
-      - name: 'Terraform Destroy'
+      - name: 'Terraform Apply'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.2.2
-          tf_actions_subcommand: 'destroy'
+          tf_actions_subcommand: 'apply'
           tf_actions_working_dir: "./Tenable_Dev/"
           args: '-var-file="global.tfvars"'
