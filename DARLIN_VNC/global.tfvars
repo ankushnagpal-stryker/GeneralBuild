@@ -32,7 +32,7 @@ rsa_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSFGRvJ6F4kZy5pH1trryUNyOuAngCS
 vms = {
     
     "azumkvncd01" = {
-    size = "Standard_B2ms"
+    size = "Standard_D2as_v5"
     source_image_id = "/subscriptions/d1d53b59-b625-4bf9-9c7e-0ade10b76d6b/resourceGroups/RG-UNIX-VDC/providers/Microsoft.Compute/galleries/RHEL/images/RHEL8.4/versions/8.4.0"
       disks = {
         "app_0" = {
