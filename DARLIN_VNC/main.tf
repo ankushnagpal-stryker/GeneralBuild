@@ -4,7 +4,7 @@ terraform {
     resource_group_name  = "RG-UNIX-VDC"
     storage_account_name = "unixstatefiles"
     container_name       = "devtfstatefiles"
-    key                  = "darlinappdev.tfstate"
+    key                  = "darlinvnc.tfstate"
      }
 }
  
