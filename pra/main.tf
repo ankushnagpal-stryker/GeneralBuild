@@ -54,7 +54,7 @@ resource "azurerm_virtual_network" "Vnet" {
    
     tags = {
       environment= var.tags_map.environment
-      department = var.tags_map.department
+      department = var.tags_map.Department
     }
 
 }
