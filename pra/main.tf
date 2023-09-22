@@ -19,13 +19,7 @@ data "azurerm_resource_group" "RG" {
 
     name = var.RG
     }
- /*   tags = {
-      environment= var.tags_map.environment
-      department = var.tags_map.department
-    }
-  
-}
-*/
+
 
 
 resource "azurerm_virtual_network" "Vnet" {
