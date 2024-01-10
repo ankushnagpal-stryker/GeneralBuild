@@ -42,7 +42,8 @@ SubnetDB={
 }
 ###code
 */
-#DBSubnetid="/subscriptions/91cbd599-d354-48e3-b7b9-380006e84af6/resourceGroups/USEast2-Accelerate-SAP-DevTest-Networking/providers/Microsoft.Network/virtualNetworks/USEast2-AccelerateSAP-Dev-Spoke-10.197.32.0-23/subnets/DB-Subnet"
+##Updated below Subnets same
+DBSubnetid="/subscriptions/056300f3-2d49-4366-95a1-fb1ae2d49f1b/resourceGroups/North-Europe-Stryker-VDC-PRJ-Dev-Networking/providers/Microsoft.Network/virtualNetworks/NorthEurope-VDC-PRJ-Dev-10.198.168.0-22/subnets/Workloads"
 AppSubnetid="/subscriptions/056300f3-2d49-4366-95a1-fb1ae2d49f1b/resourceGroups/North-Europe-Stryker-VDC-PRJ-Dev-Networking/providers/Microsoft.Network/virtualNetworks/NorthEurope-VDC-PRJ-Dev-10.198.168.0-22/subnets/Workloads"
 ################################################
 username = "sykrheladmin"
