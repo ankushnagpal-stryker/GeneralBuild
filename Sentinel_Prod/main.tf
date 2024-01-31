@@ -149,6 +149,22 @@ data "azurerm_subnet" "subnet_app" {
   resource_group_name  = "${data.azurerm_resource_group.nwrg.name}"
 }
 
+resource "azurerm_virtual_machine_extension" "example" {
+  for_each              = var.vms
+  name                  = "hostname"
+  virtual_machine_id   = azurerm_linux_virtual_machine.VM[each.key].id
+  publisher            = "Microsoft.Azure.Extensions"
+  type                 = "CustomScript"
+  type_handler_version = "2.0"
+
+  settings = <<SETTINGS
+ {
+  "commandToExecute": "/usr/bin/bash /root/tmstart.sh"
+ }
+SETTINGS
+}
+
+
 ###Define NSG#########
 /*
 data "azurerm_network_security_group" "nsg" {
