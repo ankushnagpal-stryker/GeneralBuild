@@ -116,7 +116,7 @@ vms = {
 
     "azuse2syslog01" = {
     size = "Standard_D8ds_v5"
-    ServerType  = "SE2"
+    ServerType  = "SE"
     source_image_id = "/subscriptions/d1d53b59-b625-4bf9-9c7e-0ade10b76d6b/resourceGroups/RG-UNIX-VDC/providers/Microsoft.Compute/galleries/RHEL/images/RHEL8.4/versions/8.4.0"
       disks = {
         "app_0" = {
@@ -129,7 +129,7 @@ vms = {
     }    
        "azuse2syslog02" = {
     size = "Standard_D8ds_v5"
-    ServerType  = "SE2"
+    ServerType  = "SE"
     source_image_id = "/subscriptions/d1d53b59-b625-4bf9-9c7e-0ade10b76d6b/resourceGroups/RG-UNIX-VDC/providers/Microsoft.Compute/galleries/RHEL/images/RHEL8.4/versions/8.4.0"
       disks = {
         "app_0" = {
@@ -142,7 +142,7 @@ vms = {
     }    
        "azuse2syslog03" = {
     size = "Standard_D8ds_v5"
-    ServerType  = "SE2"
+    ServerType  = "SE"
     source_image_id = "/subscriptions/d1d53b59-b625-4bf9-9c7e-0ade10b76d6b/resourceGroups/RG-UNIX-VDC/providers/Microsoft.Compute/galleries/RHEL/images/RHEL8.4/versions/8.4.0"
       disks = {
         "app_0" = {
@@ -155,7 +155,7 @@ vms = {
     }    
        "azuse2syslog04" = {
     size = "Standard_D8ds_v5"
-    ServerType  = "SE2"
+    ServerType  = "SE"
     source_image_id = "/subscriptions/d1d53b59-b625-4bf9-9c7e-0ade10b76d6b/resourceGroups/RG-UNIX-VDC/providers/Microsoft.Compute/galleries/RHEL/images/RHEL8.4/versions/8.4.0"
       disks = {
         "app_0" = {
@@ -168,7 +168,7 @@ vms = {
     }    
        "azuse2syslog05" = {
     size = "Standard_D8ds_v5"
-    ServerType  = "SE2"
+    ServerType  = "SE"
     source_image_id = "/subscriptions/d1d53b59-b625-4bf9-9c7e-0ade10b76d6b/resourceGroups/RG-UNIX-VDC/providers/Microsoft.Compute/galleries/RHEL/images/RHEL8.4/versions/8.4.0"
       disks = {
         "app_0" = {
@@ -181,7 +181,7 @@ vms = {
     }     
        "azuse2syslog06" = {
     size = "Standard_D8ds_v5"
-    ServerType  = "SE2"
+    ServerType  = "SE"
     source_image_id = "/subscriptions/d1d53b59-b625-4bf9-9c7e-0ade10b76d6b/resourceGroups/RG-UNIX-VDC/providers/Microsoft.Compute/galleries/RHEL/images/RHEL8.4/versions/8.4.0"
       disks = {
         "app_0" = {

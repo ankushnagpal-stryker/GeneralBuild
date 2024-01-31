@@ -58,7 +58,7 @@ resource "azurerm_availability_set" "ASET-SE2" {
 resource "azurerm_linux_virtual_machine" "VM" {
   for_each              = var.vms
   name                  = each.key
-  availability_set_id   = substr(each.value.ServerType,0,2)== "SE2" ? azurerm_availability_set.ASET-SE2.id : azurerm_availability_set.ASET-NE.id
+  availability_set_id   = substr(each.value.ServerType,0,2)== "SE" ? azurerm_availability_set.ASET-SE2.id : azurerm_availability_set.ASET-NE.id
   location              = var.location
   resource_group_name   = data.azurerm_resource_group.RG.name
   network_interface_ids = [azurerm_network_interface.NW[each.key].id]
