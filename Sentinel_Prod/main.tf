@@ -58,7 +58,7 @@ resource "azurerm_availability_set" "ASET-SE2" {
 resource "azurerm_linux_virtual_machine" "VM" {
   for_each              = var.vms
   name                  = each.key
-  availability_set_id   = substr(each.value.ServerType,0,2)== "SE" ? azurerm_availability_set.ASET-SE2.id : azurerm_availability_set.ASET-NE.id
+  availability_set_id   = substr(each.value.ServerType,0,2)== "SE2" ? azurerm_availability_set.ASET-SE2.id : azurerm_availability_set.ASET-NE.id
   location              = var.location
   resource_group_name   = data.azurerm_resource_group.RG.name
   network_interface_ids = [azurerm_network_interface.NW[each.key].id]
@@ -150,7 +150,7 @@ data "azurerm_subnet" "subnet_app" {
 }
 
 ###Define NSG#########
-
+/*
 data "azurerm_network_security_group" "nsg" {
   name                = "${var.nsgprefix.name}"
   resource_group_name = "${var.nsgprefix.nsgrg}"
@@ -161,3 +161,4 @@ resource "azurerm_network_interface_security_group_association" "nic-nsg" {
   network_interface_id      = azurerm_network_interface.NW[each.key].id
   network_security_group_id = data.azurerm_network_security_group.nsg.id
 }
+*/
