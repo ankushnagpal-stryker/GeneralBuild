@@ -19,7 +19,9 @@ variable "subnet" {
 
 }
 
-
+variable "SIDName" {
+  type    = string
+}
 
 variable "subscription_id" {
   type        = string

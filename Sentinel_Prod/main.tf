@@ -3,8 +3,8 @@ terraform {
     subscription_id      = "d1d53b59-b625-4bf9-9c7e-0ade10b76d6b"
     resource_group_name  = "RG-UNIX-VDC"
     storage_account_name = "unixstatefiles"
-    container_name       = "devtfstatefiles"
-    key                  = "darlinappdev.tfstate"
+    container_name       = "prodtfstatefiles"
+    key                  = "SentinelAzure.tfstate"
      }
 }
  
@@ -21,9 +21,44 @@ provider "azurerm" {
   skip_provider_registration = true
 }
 
+resource "azurerm_proximity_placement_group" "PPG" {
+  name                = "azu-${var.Environment}-PPG-${var.SIDName}"
+  location            = var.location
+  resource_group_name = var.RG
+  tags = {
+       proj = var.Cost_Center
+       env = var.Environment
+     }
+}
+
+resource "azurerm_availability_set" "ASET-NE" {
+  name = "AS-${var.SIDName}-NE"
+  location            = var.location
+  resource_group_name = var.RG
+  proximity_placement_group_id = "${azurerm_proximity_placement_group.PPG.id}"
+
+ tags = {
+       proj = var.Cost_Center
+       env = var.Environment
+     }
+}
+
+resource "azurerm_availability_set" "ASET-SE2" {
+  name = "AS-${var.SIDName}-SE2"
+  location            = var.location
+  resource_group_name = var.RG
+  proximity_placement_group_id = "${azurerm_proximity_placement_group.PPG.id}"
+
+ tags = {
+       proj = var.Cost_Center
+       env = var.Environment
+     }
+}
+
 resource "azurerm_linux_virtual_machine" "VM" {
   for_each              = var.vms
   name                  = each.key
+  availability_set_id   = substr(each.value.ServerType,0,2)== "SE2" ? azurerm_availability_set.ASET-SE2.id : azurerm_availability_set.ASET-NE.id
   location              = var.location
   resource_group_name   = data.azurerm_resource_group.RG.name
   network_interface_ids = [azurerm_network_interface.NW[each.key].id]
