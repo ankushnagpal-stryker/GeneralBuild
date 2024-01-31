@@ -75,11 +75,12 @@ resource "azurerm_linux_virtual_machine" "VM" {
         storage_account_uri = var.StorageAccountid
     }
 
-  plan {
-	name = "rhel-lvm84"
+  /*plan {
+	name = "rhel-lvm87"
 	publisher = "redhat"
 	product = "rhel-byos"
   }
+  */
 
   tags = {
         Environment = "${var.tags_map.Environment}"
