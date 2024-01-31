@@ -1,4 +1,4 @@
-name: 'DARLIN_DEV-Apply'
+name: 'Sentinel_Prod-Apply'
 on:
   workflow_dispatch:
     branches:
@@ -31,19 +31,19 @@ jobs:
         with:
           tf_actions_version: 1.2.2
           tf_actions_subcommand: 'init'
-          tf_actions_working_dir: "./DARLIN_DEV/"
+          tf_actions_working_dir: "./Sentinel_Prod/"
 
       - name: 'Terraform plan'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.2.2
           tf_actions_subcommand: 'plan'
-          tf_actions_working_dir: "./DARLIN_DEV/"
+          tf_actions_working_dir: "./Sentinel_Prod/"
           args: '-var-file="global.tfvars"'
       - name: 'Terraform Apply'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 1.2.2
           tf_actions_subcommand: 'apply'
-          tf_actions_working_dir: "./DARLIN_DEV/"
+          tf_actions_working_dir: "./Sentinel_Prod/"
           args: '-var-file="global.tfvars"'
