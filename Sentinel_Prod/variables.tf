@@ -64,6 +64,7 @@ variable "tags_map" {
 variable "vms" {
   type = map(object({
     size = string
+    ServerType  = string
     source_image_id = string
     disks = map(object({
       size                 = number
