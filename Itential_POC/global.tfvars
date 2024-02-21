@@ -1,6 +1,6 @@
 subscription_id="5487a063-1d3b-4ad3-8583-01948e8fa375"
 location="eastus2"
-RG="RSG-APP-Itential"
+RG="rsg-itential-poc-eastus2-001"
 Environment = "POC"
 Cost_Center = 1392
 #IDName="us12cdev"
